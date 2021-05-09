@@ -17,7 +17,7 @@ public class cachecache {
 
 		System.out.print("Enter input file path and name:");
 		//String inFile = in.next();
-		String inFile="cachesimulaotr\\src\\input.txt";
+		String inFile="src\\input.txt";
 		File file = new File(inFile);
 		BufferedReader brr = new BufferedReader(new FileReader(file));
 		System.out.println();
@@ -27,7 +27,7 @@ public class cachecache {
 
 
 
-		FileOutputStream outputStream = new FileOutputStream("cachesimulaotr\\src\\binaryinput.txt");
+		FileOutputStream outputStream = new FileOutputStream("src\\binaryinput.txt");
 		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream, "UTF-8");
 		BufferedWriter writer = new BufferedWriter(outputStreamWriter);
 		String t=brr.readLine();
@@ -49,7 +49,7 @@ public class cachecache {
 		}
 		writer.close();
 		//comment 4 lines below if file is already binary
-		String inFileBinary="cachesimulaotr\\src\\binaryinput.txt";
+		String inFileBinary="src\\binaryinput.txt";
 		File fileBinary = new File(inFileBinary);
 		BufferedReader br = new BufferedReader(new FileReader(fileBinary));
 		String lfCPU=br.readLine();
